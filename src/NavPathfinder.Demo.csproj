@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>NavPathfinder.Demo</RootNamespace>
+    <!-- Enable JIT optimisations in all configs — critical for math-heavy pathfinding. -->
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Consumer SDK packages — public API surface only -->
+    <Reference Include="NavPathfinder.Sdk">
+      <HintPath>..\lib\NavPathfinder.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="EvalApp.Consumer">
+      <HintPath>..\lib\EvalApp.Consumer.dll</HintPath>
+    </Reference>
+    <!-- Runtime dependencies (transitive — not referenced directly in code) -->
+    <Reference Include="EvalApp">
+      <HintPath>..\lib\EvalApp.dll</HintPath>
+    </Reference>
+    <Reference Include="EvalApp.Licensing">
+      <HintPath>..\lib\EvalApp.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="NavPathfinder.Core">
+      <HintPath>..\lib\NavPathfinder.Core.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>
