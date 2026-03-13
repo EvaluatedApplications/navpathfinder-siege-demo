@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Text;
 using NavPathfinder.Demo.Simulation;
 using NavPathfinder.Sdk;
@@ -10,6 +11,7 @@ bool isTty = !Console.IsOutputRedirected;
 if (isTty)
 {
     Console.OutputEncoding = Encoding.UTF8;
+    TryEnableVirtualTerminalProcessing();
     Console.CursorVisible  = false;
     Console.Clear();
 
@@ -138,3 +140,35 @@ finally
 }
 
 Console.WriteLine("\nSiege simulation stopped.");
+
+static void TryEnableVirtualTerminalProcessing()
+{
+    if (!OperatingSystem.IsWindows())
+        return;
+
+    const int StdOutputHandle = -11;
+    const uint EnableVirtualTerminalProcessing = 0x0004;
+
+    var handle = GetStdHandle(StdOutputHandle);
+    if (handle == IntPtr.Zero || handle == new IntPtr(-1))
+        return;
+
+    if (!GetConsoleMode(handle, out var mode))
+        return;
+
+    if ((mode & EnableVirtualTerminalProcessing) != 0)
+        return;
+
+    SetConsoleMode(handle, mode | EnableVirtualTerminalProcessing);
+}
+
+[LibraryImport("kernel32.dll", SetLastError = true)]
+private static partial IntPtr GetStdHandle(int nStdHandle);
+
+[LibraryImport("kernel32.dll", SetLastError = true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+private static partial bool GetConsoleMode(IntPtr hConsoleHandle, out uint lpMode);
+
+[LibraryImport("kernel32.dll", SetLastError = true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+private static partial bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
