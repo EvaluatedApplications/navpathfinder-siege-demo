@@ -8,17 +8,17 @@ namespace NavPathfinder.Demo.Rendering;
 /// </summary>
 public static class GlyphSets
 {
-    // Invaders: sword/arrow theme      ·  ×  †  ‡  ⁂
-    public static readonly char[] InvGlyphs = [' ', '·', '×', '†', '‡', '⁂', '⁂', '⁂', '⁂'];
+    // Invaders: ASCII-safe density ramp.
+    public static readonly char[] InvGlyphs = [' ', '.', ':', 'x', 'X', 'X', 'X', 'X', 'X'];
 
-    // Defenders: shield theme          ·  +  ‡  #  ⌂
-    public static readonly char[] DefGlyphs = [' ', '·', '+', '‡', '#', '⌂', '⌂', '⌂', '⌂'];
+    // Defenders: ASCII-safe density ramp.
+    public static readonly char[] DefGlyphs = [' ', '.', '+', 'H', '#', '#', '#', '#', '#'];
 
-    // Civilians: dot theme             ·  ∘  ○  ●
-    public static readonly char[] CivGlyphs = [' ', '·', '∘', '○', '●', '●', '●', '●', '●'];
+    // Civilians: ASCII-safe density ramp.
+    public static readonly char[] CivGlyphs = [' ', '.', 'o', 'o', 'O', 'O', 'O', 'O', 'O'];
 
-    // Sparkline bars for FPS history
-    public static readonly char[] Spark = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'];
+    // ASCII-safe sparkline ramp for FPS history.
+    public static readonly char[] Spark = ['.', ':', '-', '=', '+', '*', '#', '@'];
 
     /// <summary>Gets the density glyph for the dominant faction in a cell.</summary>
     public static char AgentGlyph(int inv, int def, int civ)
@@ -38,26 +38,26 @@ public static class GlyphSets
     {
         CastleLayer.OuterCurtain => (hasHoriz, hasVert) switch
         {
-            (true, true)   => '╬',
-            (true, false)  => '═',
-            (false, true)  => '║',
-            _              => '█'
+            (true, true)   => '+',
+            (true, false)  => '=',
+            (false, true)  => '|',
+            _              => '#'
         },
         CastleLayer.InnerBailey => (hasHoriz, hasVert) switch
         {
-            (true, true)   => '┼',
-            (true, false)  => '─',
-            (false, true)  => '│',
-            _              => '▪'
+            (true, true)   => '+',
+            (true, false)  => '-',
+            (false, true)  => '|',
+            _              => '#'
         },
         CastleLayer.Keep => (hasHoriz, hasVert) switch
         {
-            (true, true)   => '╋',
-            (true, false)  => '━',
-            (false, true)  => '┃',
-            _              => '◆'
+            (true, true)   => '+',
+            (true, false)  => '=',
+            (false, true)  => '|',
+            _              => '#'
         },
-        _ => '█'
+        _ => '#'
     };
 
     /// <summary>Gate status label for HUD display.</summary>

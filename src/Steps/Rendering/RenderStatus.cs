@@ -20,9 +20,9 @@ public sealed class RenderStatus : PureStep<SiegeTickData>
         sb.Append(ColorPalette.BoldWhite); sb.Append("Defence: "); sb.Append(ColorPalette.Reset);
         var (lineColor, lineName, lineChar) = data.ActiveDefenceLine switch
         {
-            CastleLayer.OuterCurtain => (ColorPalette.OuterWallFg, " OUTER CURTAIN ", "═══"),
-            CastleLayer.InnerBailey  => (ColorPalette.InnerWallFg, " INNER BAILEY ",  "───"),
-            CastleLayer.Keep         => (ColorPalette.KeepWallFg,  " KEEP ",          "━━━"),
+            CastleLayer.OuterCurtain => (ColorPalette.OuterWallFg, " OUTER CURTAIN ", "==="),
+            CastleLayer.InnerBailey  => (ColorPalette.InnerWallFg, " INNER BAILEY ",  "---"),
+            CastleLayer.Keep         => (ColorPalette.KeepWallFg,  " KEEP ",          "==="),
             _                        => (ColorPalette.DimGray,     " ??? ",           "---")
         };
         sb.Append(lineColor); sb.Append(lineChar); sb.Append(lineName); sb.Append(lineChar);
@@ -31,12 +31,12 @@ public sealed class RenderStatus : PureStep<SiegeTickData>
         // Win state banner
         var (wColor, wLabel) = data.WinState switch
         {
-            WinState.OuterBreached    => (ColorPalette.BoldYellow,           "  ⚠ OUTER WALLS BREACHED"),
-            WinState.InnerContested   => ("\u001b[1;38;5;208m",              "  ⚠ INNER GATES UNDER SIEGE"),
-            WinState.InvadersWinning  => (ColorPalette.BoldRed,              "  🔥 KEEP UNDER ASSAULT"),
-            WinState.DefendersWinning => (ColorPalette.BoldGreen,            "  ⛨ INVADER FORCES DEPLETED"),
-            WinState.InvadersWon      => ("\u001b[1;38;5;196m\u001b[48;5;52m", "  🏴 THE CASTLE HAS FALLEN"),
-            WinState.DefendersWon     => ("\u001b[1;38;5;46m\u001b[48;5;22m",  "  🛡 THE CASTLE STANDS"),
+            WinState.OuterBreached    => (ColorPalette.BoldYellow,           "  ! OUTER WALLS BREACHED"),
+            WinState.InnerContested   => ("\u001b[1;38;5;208m",              "  ! INNER GATES UNDER SIEGE"),
+            WinState.InvadersWinning  => (ColorPalette.BoldRed,              "  ! KEEP UNDER ASSAULT"),
+            WinState.DefendersWinning => (ColorPalette.BoldGreen,            "  ! INVADER FORCES DEPLETED"),
+            WinState.InvadersWon      => ("\u001b[1;38;5;196m\u001b[48;5;52m", "  ! THE CASTLE HAS FALLEN"),
+            WinState.DefendersWon     => ("\u001b[1;38;5;46m\u001b[48;5;22m",  "  ! THE CASTLE STANDS"),
             _                         => (ColorPalette.DimGray,              "  Siege in progress"),
         };
         sb.Append(wColor); sb.Append(wLabel); sb.Append(ColorPalette.Reset);

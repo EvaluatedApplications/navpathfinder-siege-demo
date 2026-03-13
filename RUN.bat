@@ -1,5 +1,6 @@
 @echo off
 title NavPathfinder Siege Demo
+chcp 65001 >nul
 echo.
 echo   NavPathfinder Siege Demo
 echo   ========================

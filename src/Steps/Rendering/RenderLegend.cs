@@ -16,28 +16,28 @@ public sealed class RenderLegend : PureStep<SiegeTickData>
         var sb = data.RenderBuffer!.StringBuilder;
         int panelWidth = data.RenderBuffer.Cols;
 
-        string sep = new string('━', panelWidth);
+        string sep = new string('=', panelWidth);
         sb.Append(ColorPalette.HudSeparator); sb.Append(sep);
         sb.Append(ColorPalette.Eol); sb.Append(ColorPalette.Reset); sb.AppendLine();
 
         // Row 1: Walls + Gates
         sb.Append("  ");
-        sb.Append(ColorPalette.OuterWallFg); sb.Append("═║ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.OuterWallFg); sb.Append("=| "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Outer  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.InnerWallFg); sb.Append("─│ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.InnerWallFg); sb.Append("-| "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Inner  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.KeepWallFg); sb.Append("━┃ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.KeepWallFg); sb.Append("=| "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Keep  "); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append("│ "); sb.Append(ColorPalette.Reset);
 
-        sb.Append(ColorPalette.BoldCyan);    sb.Append("░"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.BoldCyan);    sb.Append("."); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray);     sb.Append("Open "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.BoldGreen);   sb.Append("╬"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.BoldGreen);   sb.Append("#"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray);     sb.Append("Locked "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.BoldRed);     sb.Append("▓"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.BoldRed);     sb.Append("!"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray);     sb.Append("UnderAtk "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.BoldMagenta); sb.Append("░"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.BoldMagenta); sb.Append("x"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray);     sb.Append("Breached"); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append(" │ "); sb.Append(ColorPalette.Reset);
@@ -47,18 +47,18 @@ public sealed class RenderLegend : PureStep<SiegeTickData>
 
         // Row 2: Faction glyphs + density + leaders
         sb.Append("  ");
-        sb.Append(ColorPalette.InvColor); sb.Append("·×†‡ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.InvColor); sb.Append(".:xX "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Invaders  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.DefColor); sb.Append("·+‡# "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.DefColor); sb.Append(".+H# "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Defenders  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.CivColor); sb.Append("·∘○● "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.CivColor); sb.Append(".oOO "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Civilians"); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append(" │ "); sb.Append(ColorPalette.Reset);
 
-        sb.Append(ColorPalette.InvColor); sb.Append("★ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.InvColor); sb.Append("* "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Inv Leader  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.DefColor); sb.Append("★ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.DefColor); sb.Append("* "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Def Leader"); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append("  │ "); sb.Append(ColorPalette.Reset);
@@ -94,22 +94,22 @@ public sealed class RenderLegend : PureStep<SiegeTickData>
 
         // Row 4: Unit types per faction
         sb.Append("  ");
-        sb.Append(ColorPalette.InvColor); sb.Append("⚔ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.InvColor); sb.Append("S "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Swordsmen(Slash)  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.InvColor); sb.Append("🔥"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.InvColor); sb.Append("F"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Mages(Fire)"); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append("  │ "); sb.Append(ColorPalette.Reset);
 
-        sb.Append(ColorPalette.DefColor); sb.Append("🛡 "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.DefColor); sb.Append("G "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Guards(Blunt)  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.DefColor); sb.Append("🏹"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.DefColor); sb.Append("A"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Archers(Pierce)  "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.DefColor); sb.Append("⚔ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.DefColor); sb.Append("S "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Sortie(Slash)"); sb.Append(ColorPalette.Reset);
 
         sb.Append(ColorPalette.DimGray); sb.Append("  │ "); sb.Append(ColorPalette.Reset);
-        sb.Append(ColorPalette.CivColor); sb.Append("○ "); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.CivColor); sb.Append("o "); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append("Civilians(unarmed)"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.Eol); sb.AppendLine();
 
@@ -118,7 +118,7 @@ public sealed class RenderLegend : PureStep<SiegeTickData>
 
     private static void AppendStateKey(System.Text.StringBuilder sb, BehaviourState state, string label)
     {
-        sb.Append(ColorPalette.StateColor(state)); sb.Append("■"); sb.Append(ColorPalette.Reset);
+        sb.Append(ColorPalette.StateColor(state)); sb.Append("#"); sb.Append(ColorPalette.Reset);
         sb.Append(ColorPalette.DimGray); sb.Append(label); sb.Append(' '); sb.Append(ColorPalette.Reset);
     }
 }

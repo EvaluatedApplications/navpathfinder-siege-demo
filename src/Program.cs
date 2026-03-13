@@ -16,7 +16,7 @@ if (isTty)
     Console.Clear();
 
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("  ⚔  NavPathfinder SDK — Siege Simulation");
+    Console.WriteLine("  *  NavPathfinder SDK - Siege Simulation");
     Console.ResetColor();
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Gray;
