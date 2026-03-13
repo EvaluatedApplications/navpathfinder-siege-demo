@@ -149,26 +149,29 @@ static void TryEnableVirtualTerminalProcessing()
     const int StdOutputHandle = -11;
     const uint EnableVirtualTerminalProcessing = 0x0004;
 
-    var handle = GetStdHandle(StdOutputHandle);
+    var handle = WindowsConsole.GetStdHandle(StdOutputHandle);
     if (handle == IntPtr.Zero || handle == new IntPtr(-1))
         return;
 
-    if (!GetConsoleMode(handle, out var mode))
+    if (!WindowsConsole.GetConsoleMode(handle, out var mode))
         return;
 
     if ((mode & EnableVirtualTerminalProcessing) != 0)
         return;
 
-    SetConsoleMode(handle, mode | EnableVirtualTerminalProcessing);
+    WindowsConsole.SetConsoleMode(handle, mode | EnableVirtualTerminalProcessing);
 }
 
-[LibraryImport("kernel32.dll", SetLastError = true)]
-private static partial IntPtr GetStdHandle(int nStdHandle);
+internal static class WindowsConsole
+{
+    [DllImport("kernel32.dll", SetLastError = true)]
+    internal static extern IntPtr GetStdHandle(int nStdHandle);
 
-[LibraryImport("kernel32.dll", SetLastError = true)]
-[return: MarshalAs(UnmanagedType.Bool)]
-private static partial bool GetConsoleMode(IntPtr hConsoleHandle, out uint lpMode);
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static extern bool GetConsoleMode(IntPtr hConsoleHandle, out uint lpMode);
 
-[LibraryImport("kernel32.dll", SetLastError = true)]
-[return: MarshalAs(UnmanagedType.Bool)]
-private static partial bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static extern bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
+}
