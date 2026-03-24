@@ -1,0 +1,178 @@
+{
+  "PipelineKey": "DynamicObstacles/ObstacleUpdate/UpdateObstacles",
+  "Phase": "Converging",
+  "Variables": {
+    "foreach.AffectedTriangles.parallelism": {
+      "Name": "foreach.AffectedTriangles.parallelism",
+      "Config": {
+        "Name": "foreach.AffectedTriangles.parallelism",
+        "Min": 16,
+        "Max": 16,
+        "Step": 0
+      },
+      "CurrentValue": 16,
+      "BestValue": 16,
+      "BestNormWallMs": 0.013034166666666668,
+      "ConsecutiveConfirmations": 2,
+      "ProbingDirection": 1,
+      "TriedBothDirections": true,
+      "LastContentionCoeff": 0
+    },
+    "foreach.AffectedTriangles.minItemsForParallel": {
+      "Name": "foreach.AffectedTriangles.minItemsForParallel",
+      "Config": {
+        "Name": "foreach.AffectedTriangles.minItemsForParallel",
+        "Min": 8,
+        "Max": 8,
+        "Step": 0
+      },
+      "CurrentValue": 8,
+      "BestValue": 8,
+      "BestNormWallMs": 1.7976931348623157E+308,
+      "ConsecutiveConfirmations": 2,
+      "ProbingDirection": 1,
+      "TriedBothDirections": true,
+      "LastContentionCoeff": 0
+    }
+  },
+  "History": [
+    {
+      "Timestamp": "2026-03-12T10:11:03.3672662+00:00",
+      "RepoCount": 120,
+      "TotalWallMs": 14.3055,
+      "NormalisedWallMs": 0.1192125,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Ramping",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:03.7933235+00:00",
+      "RepoCount": 120,
+      "TotalWallMs": 1.8573,
+      "NormalisedWallMs": 0.0154775,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:04.1679963+00:00",
+      "RepoCount": 120,
+      "TotalWallMs": 1.5641,
+      "NormalisedWallMs": 0.013034166666666668,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.AffectedTriangles.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:04.3181279+00:00",
+      "RepoCount": 120,
+      "TotalWallMs": 1.6028,
+      "NormalisedWallMs": 0.013356666666666666,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.AffectedTriangles.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:04.633192+00:00",
+      "RepoCount": 120,
+      "TotalWallMs": 1.7024,
+      "NormalisedWallMs": 0.014186666666666665,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.AffectedTriangles.minItemsForParallel"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:05.7799453+00:00",
+      "RepoCount": 90,
+      "TotalWallMs": 6.3094,
+      "NormalisedWallMs": 0.07010444444444444,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.AffectedTriangles.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:06.1558366+00:00",
+      "RepoCount": 75,
+      "TotalWallMs": 2.098,
+      "NormalisedWallMs": 0.027973333333333333,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.AffectedTriangles.minItemsForParallel"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:06.6497989+00:00",
+      "RepoCount": 60,
+      "TotalWallMs": 1.9494,
+      "NormalisedWallMs": 0.03249,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:06.9441347+00:00",
+      "RepoCount": 45,
+      "TotalWallMs": 1.5219,
+      "NormalisedWallMs": 0.03382,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:07.274361+00:00",
+      "RepoCount": 30,
+      "TotalWallMs": 1.8035,
+      "NormalisedWallMs": 0.06011666666666667,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.AffectedTriangles.parallelism": 16,
+        "foreach.AffectedTriangles.minItemsForParallel": 8
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    }
+  ],
+  "ConvergingRunCount": 3,
+  "ProbeInterval": 10,
+  "RunsSinceProbe": 0,
+  "CurrentProbedVariable": null,
+  "BatchProbedValues": {},
+  "ConsecutiveDegradedRuns": 3,
+  "LastUpdated": "2026-03-12T10:11:07.2743695+00:00",
+  "BayesianArms": null
+}

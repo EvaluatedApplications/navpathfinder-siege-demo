@@ -1,0 +1,830 @@
+{
+  "PipelineKey": "NavPathfinder/Navigation/Tick",
+  "Phase": "Monitoring",
+  "Variables": {
+    "foreach.GoalGroups.parallelism": {
+      "Name": "foreach.GoalGroups.parallelism",
+      "Config": {
+        "Name": "foreach.GoalGroups.parallelism",
+        "Min": 16,
+        "Max": 16,
+        "Step": 0
+      },
+      "CurrentValue": 16,
+      "BestValue": 16,
+      "BestNormWallMs": 0.004808467741935484,
+      "ConsecutiveConfirmations": 0,
+      "ProbingDirection": 1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    },
+    "foreach.GoalGroups.minItemsForParallel": {
+      "Name": "foreach.GoalGroups.minItemsForParallel",
+      "Config": {
+        "Name": "foreach.GoalGroups.minItemsForParallel",
+        "Min": 4,
+        "Max": 4,
+        "Step": 0
+      },
+      "CurrentValue": 4,
+      "BestValue": 4,
+      "BestNormWallMs": 0.004808467741935484,
+      "ConsecutiveConfirmations": 0,
+      "ProbingDirection": 1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    },
+    "foreach.Agents.parallelism": {
+      "Name": "foreach.Agents.parallelism",
+      "Config": {
+        "Name": "foreach.Agents.parallelism",
+        "Min": 16,
+        "Max": 16,
+        "Step": 0
+      },
+      "CurrentValue": 16,
+      "BestValue": 16,
+      "BestNormWallMs": 0.004808467741935484,
+      "ConsecutiveConfirmations": 0,
+      "ProbingDirection": 1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    },
+    "foreach.Agents.minItemsForParallel": {
+      "Name": "foreach.Agents.minItemsForParallel",
+      "Config": {
+        "Name": "foreach.Agents.minItemsForParallel",
+        "Min": 4,
+        "Max": 4,
+        "Step": 0
+      },
+      "CurrentValue": 4,
+      "BestValue": 4,
+      "BestNormWallMs": 0.004808467741935484,
+      "ConsecutiveConfirmations": 0,
+      "ProbingDirection": 1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    }
+  },
+  "History": [
+    {
+      "Timestamp": "2026-03-12T10:11:22.8778343+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.1469,
+      "NormalisedWallMs": 0.006146899999999999,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Agents.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.1014527+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0359,
+      "NormalisedWallMs": 0.005035899999999999,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Agents.minItemsForParallel"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.1401927+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.8989,
+      "NormalisedWallMs": 0.0048989,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.2126668+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.4142,
+      "NormalisedWallMs": 0.0064142,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.4186943+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.9961,
+      "NormalisedWallMs": 0.0049961,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.4453533+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.4098,
+      "NormalisedWallMs": 0.004409799999999999,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.5248843+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.1231,
+      "NormalisedWallMs": 0.0051231,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.7097487+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.486,
+      "NormalisedWallMs": 0.0044859999999999995,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.7358283+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 7.2874,
+      "NormalisedWallMs": 0.0072874,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.8062872+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0345,
+      "NormalisedWallMs": 0.005034500000000001,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.0155248+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.386,
+      "NormalisedWallMs": 0.005386,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.0413277+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.8472,
+      "NormalisedWallMs": 0.0048472,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.1148037+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.6029,
+      "NormalisedWallMs": 0.0046029,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.3100812+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.9428,
+      "NormalisedWallMs": 0.0049428,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.3375724+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.3579,
+      "NormalisedWallMs": 0.0053579,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.4126927+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.8538,
+      "NormalisedWallMs": 0.004853799999999999,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.6261883+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.7723,
+      "NormalisedWallMs": 0.0047723,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.64889+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.5389,
+      "NormalisedWallMs": 0.0045389,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.7230266+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.9659,
+      "NormalisedWallMs": 0.0049659000000000005,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.9524352+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 7.8353,
+      "NormalisedWallMs": 0.0078353,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.9857902+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.8133,
+      "NormalisedWallMs": 0.0068132999999999996,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.0522742+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.2979,
+      "NormalisedWallMs": 0.0052979,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.2505747+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.3855,
+      "NormalisedWallMs": 0.0063855000000000006,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.2741551+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.5957,
+      "NormalisedWallMs": 0.0045957,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.3523944+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.5369,
+      "NormalisedWallMs": 0.0065369,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.5735357+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.6101,
+      "NormalisedWallMs": 0.0056101,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": "foreach.GoalGroups.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.598304+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0197,
+      "NormalisedWallMs": 0.0050197,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.6759547+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.9169,
+      "NormalisedWallMs": 0.0049169,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.8909166+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.4513,
+      "NormalisedWallMs": 0.0054513,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.9206121+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.8282,
+      "NormalisedWallMs": 0.0058281999999999995,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.9890805+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.8499,
+      "NormalisedWallMs": 0.0068499,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.2049884+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0188,
+      "NormalisedWallMs": 0.0050187999999999995,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.2297974+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.1391,
+      "NormalisedWallMs": 0.0051391,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.3017645+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0024,
+      "NormalisedWallMs": 0.0050024,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.5257716+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.8897,
+      "NormalisedWallMs": 0.0058897,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.5498708+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.3398,
+      "NormalisedWallMs": 0.0053398000000000004,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.6271158+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.2165,
+      "NormalisedWallMs": 0.0052165,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.8464478+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.1695,
+      "NormalisedWallMs": 0.0051695000000000005,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.8750872+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.0659,
+      "NormalisedWallMs": 0.0050659,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.9455315+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.3363,
+      "NormalisedWallMs": 0.0053362999999999996,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.1780217+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.7639,
+      "NormalisedWallMs": 0.0057639,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.2091945+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.035,
+      "NormalisedWallMs": 0.005035,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.2857959+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.5738,
+      "NormalisedWallMs": 0.0065738,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.5215451+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.9614,
+      "NormalisedWallMs": 0.0049614,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.54809+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.304,
+      "NormalisedWallMs": 0.0053040000000000006,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": "foreach.GoalGroups.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.6258255+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 5.2355,
+      "NormalisedWallMs": 0.0052355,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.8631738+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.2342,
+      "NormalisedWallMs": 0.0062342000000000005,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.8944762+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.6124,
+      "NormalisedWallMs": 0.0066124,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.9685315+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 4.7383,
+      "NormalisedWallMs": 0.0047383,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:28.2045175+00:00",
+      "RepoCount": 1000,
+      "TotalWallMs": 6.6596,
+      "NormalisedWallMs": 0.0066596,
+      "Gates": {},
+      "VariableSnapshot": {
+        "foreach.GoalGroups.parallelism": 16,
+        "foreach.GoalGroups.minItemsForParallel": 4,
+        "foreach.Agents.parallelism": 16,
+        "foreach.Agents.minItemsForParallel": 4
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    }
+  ],
+  "ConvergingRunCount": 5,
+  "ProbeInterval": 18,
+  "RunsSinceProbe": 5,
+  "CurrentProbedVariable": null,
+  "BatchProbedValues": {},
+  "ConsecutiveDegradedRuns": 0,
+  "LastUpdated": "2026-03-12T10:11:28.2045243+00:00",
+  "BayesianArms": null
+}

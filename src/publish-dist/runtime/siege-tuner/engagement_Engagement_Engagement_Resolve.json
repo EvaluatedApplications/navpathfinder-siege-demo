@@ -1,0 +1,1114 @@
+{
+  "PipelineKey": "Engagement/Engagement/Resolve",
+  "Phase": "Exploring",
+  "Variables": {
+    "foreach.Engagements.parallelism": {
+      "Name": "foreach.Engagements.parallelism",
+      "Config": {
+        "Name": "foreach.Engagements.parallelism",
+        "Min": 16,
+        "Max": 16,
+        "Step": 0
+      },
+      "CurrentValue": 16,
+      "BestValue": 16,
+      "BestNormWallMs": 0.0006658354114713217,
+      "ConsecutiveConfirmations": 1,
+      "ProbingDirection": -1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    },
+    "foreach.Engagements.minItemsForParallel": {
+      "Name": "foreach.Engagements.minItemsForParallel",
+      "Config": {
+        "Name": "foreach.Engagements.minItemsForParallel",
+        "Min": 4,
+        "Max": 4,
+        "Step": 0
+      },
+      "CurrentValue": 4,
+      "BestValue": 4,
+      "BestNormWallMs": 0.0006658354114713217,
+      "ConsecutiveConfirmations": 1,
+      "ProbingDirection": -1,
+      "TriedBothDirections": false,
+      "LastContentionCoeff": 0
+    },
+    "gate.cpu.concurrency": {
+      "Name": "gate.cpu.concurrency",
+      "Config": {
+        "Name": "gate.cpu.concurrency",
+        "Min": 1,
+        "Max": 16,
+        "Step": 0
+      },
+      "CurrentValue": 12,
+      "BestValue": 12,
+      "BestNormWallMs": 0.0006658354114713217,
+      "ConsecutiveConfirmations": 2,
+      "ProbingDirection": 1,
+      "TriedBothDirections": true,
+      "LastContentionCoeff": 0.17839195979899497
+    }
+  },
+  "History": [
+    {
+      "Timestamp": "2026-03-12T10:11:22.8826955+00:00",
+      "RepoCount": 1792,
+      "TotalWallMs": 1.1902,
+      "NormalisedWallMs": 0.0006641741071428571,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0511,
+          "TotalExecMs": 0.2109,
+          "Acquisitions": 1792
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.1063513+00:00",
+      "RepoCount": 1797,
+      "TotalWallMs": 1.1289,
+      "NormalisedWallMs": 0.0006282136894824708,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0487,
+          "TotalExecMs": 0.2416,
+          "Acquisitions": 1797
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.1465496+00:00",
+      "RepoCount": 1806,
+      "TotalWallMs": 1.133,
+      "NormalisedWallMs": 0.0006273532668881506,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0528,
+          "TotalExecMs": 0.2254,
+          "Acquisitions": 1806
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.2179391+00:00",
+      "RepoCount": 1806,
+      "TotalWallMs": 1.5096,
+      "NormalisedWallMs": 0.0008358803986710964,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0604,
+          "TotalExecMs": 0.297,
+          "Acquisitions": 1806
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.4301335+00:00",
+      "RepoCount": 1810,
+      "TotalWallMs": 5.0972,
+      "NormalisedWallMs": 0.0028161325966850827,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0514,
+          "TotalExecMs": 0.3719,
+          "Acquisitions": 1810
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.4518784+00:00",
+      "RepoCount": 1820,
+      "TotalWallMs": 1.3536,
+      "NormalisedWallMs": 0.0007437362637362637,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0564,
+          "TotalExecMs": 0.2717,
+          "Acquisitions": 1820
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.5298305+00:00",
+      "RepoCount": 1820,
+      "TotalWallMs": 1.2041,
+      "NormalisedWallMs": 0.0006615934065934065,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0519,
+          "TotalExecMs": 0.2383,
+          "Acquisitions": 1820
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.7168101+00:00",
+      "RepoCount": 1827,
+      "TotalWallMs": 1.3368,
+      "NormalisedWallMs": 0.0007316912972085386,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0546,
+          "TotalExecMs": 0.2662,
+          "Acquisitions": 1827
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.741034+00:00",
+      "RepoCount": 1840,
+      "TotalWallMs": 1.1856,
+      "NormalisedWallMs": 0.0006443478260869565,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.052,
+          "TotalExecMs": 0.2434,
+          "Acquisitions": 1840
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:23.8128346+00:00",
+      "RepoCount": 1839,
+      "TotalWallMs": 1.1928,
+      "NormalisedWallMs": 0.0006486133768352366,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0532,
+          "TotalExecMs": 0.2376,
+          "Acquisitions": 1839
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.0211083+00:00",
+      "RepoCount": 1842,
+      "TotalWallMs": 1.2401,
+      "NormalisedWallMs": 0.0006732356134636265,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0554,
+          "TotalExecMs": 0.2454,
+          "Acquisitions": 1842
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.0496072+00:00",
+      "RepoCount": 1847,
+      "TotalWallMs": 1.9278,
+      "NormalisedWallMs": 0.0010437466161342718,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0682,
+          "TotalExecMs": 0.4149,
+          "Acquisitions": 1847
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.1210467+00:00",
+      "RepoCount": 1847,
+      "TotalWallMs": 1.161,
+      "NormalisedWallMs": 0.0006285868976719003,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0497,
+          "TotalExecMs": 0.237,
+          "Acquisitions": 1847
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.3186387+00:00",
+      "RepoCount": 1853,
+      "TotalWallMs": 4.5152,
+      "NormalisedWallMs": 0.002436697247706422,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0532,
+          "TotalExecMs": 3.5523,
+          "Acquisitions": 1853
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.3468765+00:00",
+      "RepoCount": 1865,
+      "TotalWallMs": 1.3162,
+      "NormalisedWallMs": 0.0007057372654155496,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0604,
+          "TotalExecMs": 0.2664,
+          "Acquisitions": 1865
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 7
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.4179254+00:00",
+      "RepoCount": 1865,
+      "TotalWallMs": 1.248,
+      "NormalisedWallMs": 0.0006691689008042895,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0532,
+          "TotalExecMs": 0.2475,
+          "Acquisitions": 1865
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.6313513+00:00",
+      "RepoCount": 1874,
+      "TotalWallMs": 1.2122,
+      "NormalisedWallMs": 0.0006468516542155816,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0547,
+          "TotalExecMs": 0.2367,
+          "Acquisitions": 1874
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.minItemsForParallel"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.6575014+00:00",
+      "RepoCount": 1887,
+      "TotalWallMs": 3.6162,
+      "NormalisedWallMs": 0.00191637519872814,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0532,
+          "TotalExecMs": 2.6524,
+          "Acquisitions": 1887
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.7301363+00:00",
+      "RepoCount": 1887,
+      "TotalWallMs": 1.2134,
+      "NormalisedWallMs": 0.0006430312665606783,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.051,
+          "TotalExecMs": 0.2369,
+          "Acquisitions": 1887
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.minItemsForParallel"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.9618766+00:00",
+      "RepoCount": 1891,
+      "TotalWallMs": 1.6732,
+      "NormalisedWallMs": 0.0008848228450555262,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0647,
+          "TotalExecMs": 0.33,
+          "Acquisitions": 1891
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:24.9921182+00:00",
+      "RepoCount": 1903,
+      "TotalWallMs": 1.4302,
+      "NormalisedWallMs": 0.0007515501839201261,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0632,
+          "TotalExecMs": 0.2966,
+          "Acquisitions": 1903
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.0618938+00:00",
+      "RepoCount": 1903,
+      "TotalWallMs": 1.3235,
+      "NormalisedWallMs": 0.0006954808197582764,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0619,
+          "TotalExecMs": 0.2583,
+          "Acquisitions": 1903
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.2563215+00:00",
+      "RepoCount": 1910,
+      "TotalWallMs": 1.3079,
+      "NormalisedWallMs": 0.0006847643979057592,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0635,
+          "TotalExecMs": 0.2567,
+          "Acquisitions": 1910
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.2803191+00:00",
+      "RepoCount": 1920,
+      "TotalWallMs": 1.3754,
+      "NormalisedWallMs": 0.0007163541666666667,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0592,
+          "TotalExecMs": 0.2695,
+          "Acquisitions": 1920
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Converging",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.3688538+00:00",
+      "RepoCount": 1919,
+      "TotalWallMs": 1.5708,
+      "NormalisedWallMs": 0.0008185513288170922,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0667,
+          "TotalExecMs": 0.3185,
+          "Acquisitions": 1919
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.5797428+00:00",
+      "RepoCount": 1924,
+      "TotalWallMs": 1.4635,
+      "NormalisedWallMs": 0.0007606548856548856,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0707,
+          "TotalExecMs": 0.2809,
+          "Acquisitions": 1924
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.6039597+00:00",
+      "RepoCount": 1933,
+      "TotalWallMs": 1.2739,
+      "NormalisedWallMs": 0.0006590274185204345,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0598,
+          "TotalExecMs": 0.2494,
+          "Acquisitions": 1933
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.6831688+00:00",
+      "RepoCount": 1932,
+      "TotalWallMs": 1.7434,
+      "NormalisedWallMs": 0.0009023809523809525,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0774,
+          "TotalExecMs": 0.3538,
+          "Acquisitions": 1932
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.8967627+00:00",
+      "RepoCount": 1938,
+      "TotalWallMs": 1.3243,
+      "NormalisedWallMs": 0.0006833333333333333,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0598,
+          "TotalExecMs": 0.2718,
+          "Acquisitions": 1938
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.929999+00:00",
+      "RepoCount": 1945,
+      "TotalWallMs": 3.0212,
+      "NormalisedWallMs": 0.0015533161953727506,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0597,
+          "TotalExecMs": 0.2621,
+          "Acquisitions": 1945
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:25.9951575+00:00",
+      "RepoCount": 1945,
+      "TotalWallMs": 1.5882,
+      "NormalisedWallMs": 0.0008165552699228792,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.067,
+          "TotalExecMs": 0.3185,
+          "Acquisitions": 1945
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.2142545+00:00",
+      "RepoCount": 1949,
+      "TotalWallMs": 5.0847,
+      "NormalisedWallMs": 0.0026088763468445357,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.056,
+          "TotalExecMs": 4.0762,
+          "Acquisitions": 1949
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.2375864+00:00",
+      "RepoCount": 1961,
+      "TotalWallMs": 1.2875,
+      "NormalisedWallMs": 0.0006565527791942887,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0548,
+          "TotalExecMs": 0.2498,
+          "Acquisitions": 1961
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.3074422+00:00",
+      "RepoCount": 1961,
+      "TotalWallMs": 1.2331,
+      "NormalisedWallMs": 0.0006288118306986232,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0565,
+          "TotalExecMs": 0.2547,
+          "Acquisitions": 1961
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.5324628+00:00",
+      "RepoCount": 1970,
+      "TotalWallMs": 1.2013,
+      "NormalisedWallMs": 0.0006097969543147208,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0571,
+          "TotalExecMs": 0.2347,
+          "Acquisitions": 1970
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.5555396+00:00",
+      "RepoCount": 1979,
+      "TotalWallMs": 1.3209,
+      "NormalisedWallMs": 0.0006674583122789287,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0585,
+          "TotalExecMs": 0.2618,
+          "Acquisitions": 1979
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.6342952+00:00",
+      "RepoCount": 1979,
+      "TotalWallMs": 1.3274,
+      "NormalisedWallMs": 0.0006707427993936331,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0564,
+          "TotalExecMs": 0.2629,
+          "Acquisitions": 1979
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.8575102+00:00",
+      "RepoCount": 1984,
+      "TotalWallMs": 6.3594,
+      "NormalisedWallMs": 0.003205342741935484,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0744,
+          "TotalExecMs": 0.3715,
+          "Acquisitions": 1984
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.8826148+00:00",
+      "RepoCount": 1994,
+      "TotalWallMs": 1.354,
+      "NormalisedWallMs": 0.0006790371113340021,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.063,
+          "TotalExecMs": 0.2753,
+          "Acquisitions": 1994
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:26.9544507+00:00",
+      "RepoCount": 1994,
+      "TotalWallMs": 1.3628,
+      "NormalisedWallMs": 0.0006834503510531595,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0619,
+          "TotalExecMs": 0.2743,
+          "Acquisitions": 1994
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.187333+00:00",
+      "RepoCount": 2000,
+      "TotalWallMs": 1.7974,
+      "NormalisedWallMs": 0.0008987000000000001,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0612,
+          "TotalExecMs": 0.413,
+          "Acquisitions": 2000
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.2183017+00:00",
+      "RepoCount": 2005,
+      "TotalWallMs": 3.3045,
+      "NormalisedWallMs": 0.001648129675810474,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0699,
+          "TotalExecMs": 0.3049,
+          "Acquisitions": 2005
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 9
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.2927509+00:00",
+      "RepoCount": 2005,
+      "TotalWallMs": 1.335,
+      "NormalisedWallMs": 0.0006658354114713217,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0604,
+          "TotalExecMs": 0.2656,
+          "Acquisitions": 2005
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Monitoring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.5276055+00:00",
+      "RepoCount": 2009,
+      "TotalWallMs": 1.3745,
+      "NormalisedWallMs": 0.0006841712294673967,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0616,
+          "TotalExecMs": 0.2786,
+          "Acquisitions": 2009
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Ramping",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.557019+00:00",
+      "RepoCount": 2013,
+      "TotalWallMs": 2.1907,
+      "NormalisedWallMs": 0.0010882762046696473,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0795,
+          "TotalExecMs": 0.4648,
+          "Acquisitions": 2013
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 15
+      },
+      "PhaseAtRun": "Ramping",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.6297606+00:00",
+      "RepoCount": 2013,
+      "TotalWallMs": 3.1839,
+      "NormalisedWallMs": 0.0015816691505216095,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.064,
+          "TotalExecMs": 0.2968,
+          "Acquisitions": 2013
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": null
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.8733684+00:00",
+      "RepoCount": 2017,
+      "TotalWallMs": 1.588,
+      "NormalisedWallMs": 0.0007873078829945464,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0716,
+          "TotalExecMs": 0.3242,
+          "Acquisitions": 2017
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 15
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.9028837+00:00",
+      "RepoCount": 2025,
+      "TotalWallMs": 1.7539,
+      "NormalisedWallMs": 0.0008661234567901234,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0761,
+          "TotalExecMs": 0.3329,
+          "Acquisitions": 2025
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 10
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "gate.cpu.concurrency"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:27.9744773+00:00",
+      "RepoCount": 2025,
+      "TotalWallMs": 1.348,
+      "NormalisedWallMs": 0.000665679012345679,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0622,
+          "TotalExecMs": 0.2745,
+          "Acquisitions": 2025
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.parallelism"
+    },
+    {
+      "Timestamp": "2026-03-12T10:11:28.2191275+00:00",
+      "RepoCount": 2030,
+      "TotalWallMs": 7.0101,
+      "NormalisedWallMs": 0.003453251231527094,
+      "Gates": {
+        "cpu": {
+          "GateName": "cpu",
+          "TotalWaitMs": 0.0639,
+          "TotalExecMs": 0.2943,
+          "Acquisitions": 2030
+        }
+      },
+      "VariableSnapshot": {
+        "foreach.Engagements.parallelism": 16,
+        "foreach.Engagements.minItemsForParallel": 4,
+        "gate.cpu.concurrency": 12
+      },
+      "PhaseAtRun": "Exploring",
+      "ProbedVariable": "foreach.Engagements.minItemsForParallel"
+    }
+  ],
+  "ConvergingRunCount": 5,
+  "ProbeInterval": 18,
+  "RunsSinceProbe": 1,
+  "CurrentProbedVariable": "foreach.Engagements.parallelism",
+  "BatchProbedValues": {},
+  "ConsecutiveDegradedRuns": 0,
+  "LastUpdated": "2026-03-12T10:11:28.2191382+00:00",
+  "BayesianArms": null
+}

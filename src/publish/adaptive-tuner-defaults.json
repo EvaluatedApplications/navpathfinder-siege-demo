@@ -1,0 +1,14 @@
+{
+  "ImprovementThreshold": 0.04,
+  "ConvergenceStddevThreshold": 0.04,
+  "ConvergingRunsNeeded": 5,
+  "MonitoringRegressionThreshold": 0.19,
+  "MonitoringImprovementThreshold": 0.3,
+  "MaxProbeInterval": 18,
+  "MaxHistorySize": 50,
+  "ExplorationWindowSize": 28,
+  "EmergencyDegradationThreshold": 0.36,
+  "EmergencyRunsNeeded": 4,
+  "ConvergingInstabilityThreshold": 1.5,
+  "MinItemsForParallel": 4
+}

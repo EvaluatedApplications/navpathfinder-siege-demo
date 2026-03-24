@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>NavPathfinder.Demo</RootNamespace>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Pre-compiled SDK + runtime DLLs — source code not included.
+         NavPathfinder.Sdk.dll contains the merged SDK/Core surface.
+         EvalApp.Consumer.dll is the canonical EvalApp runtime dependency. -->
+    <Reference Include="NavPathfinder.Sdk">
+      <HintPath>..\lib\NavPathfinder.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="EvalApp.Consumer">
+      <HintPath>..\lib\EvalApp.Consumer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
